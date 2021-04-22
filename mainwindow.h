@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QStandardItemModel>
+#include "country.h"
+#include <vector>
+#include <iostream>
 
 namespace Ui {
 class MainWindow;
@@ -19,6 +22,7 @@ public:
 private:
     Ui::MainWindow *ui;
     QStandardItemModel *csvModel;
+    std::vector<std::vector<QString>> listOfCountries;
 };
 
 #endif // MAINWINDOW_H

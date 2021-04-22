@@ -9,33 +9,36 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    // Create a data model for the mapping table from a CSV file
-    csvModel = new QStandardItemModel(this);
-    csvModel->setColumnCount(3);
-    csvModel->setHorizontalHeaderLabels(QStringList() << "id" << "name" << "alpha2" << "alpha3");
-    ui->tableView->setModel(csvModel);
 
-    // Open the file from the direcotry
-    QFile file("../exampleTable.csv");
+    std::vector<QString> country;
+    // Open the file from the directory
+    QFile file("../countries.csv");
     if ( !file.open(QFile::ReadOnly | QFile::Text) ) {
         qDebug() << "File not exists";
     } else {
-        // Create a thread to retrieve data from a file
+        //Create a thread to retrieve data from a file
         QTextStream in(&file);
         //Reads the data up to the end of file
         while (!in.atEnd())
         {
             QString line = in.readLine();
-            // Adding to the model in line with the elements
-            QList<QStandardItem *> standardItemsList;
+
             // consider that the line separated by semicolons into columns
             for (QString item : line.split(",")) {
-                standardItemsList.append(new QStandardItem(item));
+                country.push_back(item);
             }
-            csvModel->insertRow(csvModel->rowCount(), standardItemsList);
+
+            listOfCountries.push_back(country);
+            country.clear();
+
         }
-        file.close();
     }
+    file.close();
+
+    for (std::vector<QString> country : listOfCountries) {
+        ui->listWidget->addItem(country.at(0));
+    }
+
 }
 
 MainWindow::~MainWindow()

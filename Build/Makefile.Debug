@@ -225,6 +225,8 @@ debug/moc_mainwindow.cpp: ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItemModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+		../country.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	C:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include C:/Projects/QT/FinaProject/Build/debug/moc_predefs.h -IC:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -IC:/Projects/QT/FinaProject -IC:/Qt/5.15.2/mingw81_64/include -IC:/Qt/5.15.2/mingw81_64/include/QtWidgets -IC:/Qt/5.15.2/mingw81_64/include/QtGui -IC:/Qt/5.15.2/mingw81_64/include/QtANGLE -IC:/Qt/5.15.2/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\mainwindow.h -o debug\moc_mainwindow.cpp
@@ -362,6 +364,8 @@ debug/main.o: ../main.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItemModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+		../country.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
@@ -481,6 +485,8 @@ debug/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItemModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+		../country.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		ui_mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
