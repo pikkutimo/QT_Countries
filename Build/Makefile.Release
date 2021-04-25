@@ -350,14 +350,18 @@ release/moc_mainwindow.cpp: ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItemModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+<<<<<<< HEAD
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
+=======
+>>>>>>> parent of cc2d0f4 (Chacnged from tableview to listview. Data changes also to countries.csv.)
 		release/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	C:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include C:/Projects/QT/FinaProject/Build/release/moc_predefs.h -IC:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -IC:/Projects/QT/FinaProject -IC:/Qt/5.15.2/mingw81_64/include -IC:/Qt/5.15.2/mingw81_64/include/QtWidgets -IC:/Qt/5.15.2/mingw81_64/include/QtGui -IC:/Qt/5.15.2/mingw81_64/include/QtANGLE -IC:/Qt/5.15.2/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\mainwindow.h -o release\moc_mainwindow.cpp
 
+<<<<<<< HEAD
 release/moc_selectiondialog.cpp: ../selectiondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QDialog \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
@@ -468,10 +472,13 @@ release/moc_selectiondialog.cpp: ../selectiondialog.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	C:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include C:/Projects/QT/FinaProject/Build/release/moc_predefs.h -IC:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -IC:/Projects/QT/FinaProject -IC:/Qt/5.15.2/mingw81_64/include -IC:/Qt/5.15.2/mingw81_64/include/QtWidgets -IC:/Qt/5.15.2/mingw81_64/include/QtGui -IC:/Qt/5.15.2/mingw81_64/include/QtANGLE -IC:/Qt/5.15.2/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\selectiondialog.h -o release\moc_selectiondialog.cpp
 
+=======
+>>>>>>> parent of cc2d0f4 (Chacnged from tableview to listview. Data changes also to countries.csv.)
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
+<<<<<<< HEAD
 compiler_uic_make_all: ui_comparisondialog.h ui_mainwindow.h ui_selectiondialog.h
 compiler_uic_clean:
 	-$(DEL_FILE) ui_comparisondialog.h ui_mainwindow.h ui_selectiondialog.h
@@ -479,14 +486,22 @@ ui_comparisondialog.h: ../comparisondialog.ui \
 		../../../../Qt/5.15.2/mingw81_64/bin/uic.exe
 	C:\Qt\5.15.2\mingw81_64\bin\uic.exe ..\comparisondialog.ui -o ui_comparisondialog.h
 
+=======
+compiler_uic_make_all: ui_mainwindow.h
+compiler_uic_clean:
+	-$(DEL_FILE) ui_mainwindow.h
+>>>>>>> parent of cc2d0f4 (Chacnged from tableview to listview. Data changes also to countries.csv.)
 ui_mainwindow.h: ../mainwindow.ui \
 		../../../../Qt/5.15.2/mingw81_64/bin/uic.exe
 	C:\Qt\5.15.2\mingw81_64\bin\uic.exe ..\mainwindow.ui -o ui_mainwindow.h
 
+<<<<<<< HEAD
 ui_selectiondialog.h: ../selectiondialog.ui \
 		../../../../Qt/5.15.2/mingw81_64/bin/uic.exe
 	C:\Qt\5.15.2\mingw81_64\bin\uic.exe ..\selectiondialog.ui -o ui_selectiondialog.h
 
+=======
+>>>>>>> parent of cc2d0f4 (Chacnged from tableview to listview. Data changes also to countries.csv.)
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
 compiler_yacc_impl_make_all:
@@ -496,6 +511,7 @@ compiler_lex_clean:
 compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
 
 
+<<<<<<< HEAD
 
 ####### Compile
 
@@ -606,6 +622,8 @@ release/comparisondialog.o: ../comparisondialog.cpp ../comparisondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
 		ui_comparisondialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\comparisondialog.o ..\comparisondialog.cpp
+=======
+>>>>>>> parent of cc2d0f4 (Chacnged from tableview to listview. Data changes also to countries.csv.)
 
 release/loader.o: ../loader.cpp ../loader.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
@@ -789,10 +807,13 @@ release/main.o: ../main.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItemModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+<<<<<<< HEAD
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
+=======
+>>>>>>> parent of cc2d0f4 (Chacnged from tableview to listview. Data changes also to countries.csv.)
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
@@ -912,10 +933,13 @@ release/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItemModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+<<<<<<< HEAD
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
+=======
+>>>>>>> parent of cc2d0f4 (Chacnged from tableview to listview. Data changes also to countries.csv.)
 		ui_mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \

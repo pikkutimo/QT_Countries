@@ -14,6 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+<<<<<<< HEAD
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
@@ -56,6 +57,18 @@
      </layout>
     </item>
    </layout>
+=======
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>551</height>
+     </rect>
+    </property>
+   </widget>
+>>>>>>> parent of cc2d0f4 (Chacnged from tableview to listview. Data changes also to countries.csv.)
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

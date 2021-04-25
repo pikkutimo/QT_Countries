@@ -3,10 +3,13 @@
 
 #include <QMainWindow>
 #include <QStandardItemModel>
+<<<<<<< HEAD
 #include <QStringListModel>
 #include "country.h"
 #include <vector>
 #include <iostream>
+=======
+>>>>>>> parent of cc2d0f4 (Chacnged from tableview to listview. Data changes also to countries.csv.)
 
 namespace Ui {
 class MainWindow;
@@ -31,8 +34,12 @@ signals:
 
 private:
     Ui::MainWindow *ui;
+<<<<<<< HEAD
 
 
+=======
+    QStandardItemModel *csvModel;
+>>>>>>> parent of cc2d0f4 (Chacnged from tableview to listview. Data changes also to countries.csv.)
 };
 
 #endif // MAINWINDOW_H
