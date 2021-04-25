@@ -1,7 +1,7 @@
 #include "comparisondialog.h"
 #include "ui_comparisondialog.h"
 
-ComparisonDialog::ComparisonDialog(QWidget *parent) :
+ComparisonDialog::ComparisonDialog(std::vector<QString> originalCountry, std::vector<QString> countryToCompare, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ComparisonDialog)
 {
@@ -11,11 +11,11 @@ ComparisonDialog::ComparisonDialog(QWidget *parent) :
     originalModel = new QStringListModel(*originalList, NULL);
     comparisonModel = new QStringListModel(*comparisonList, NULL);
 
-    for (QString item: *originalCountry) {
+    for (QString item: originalCountry) {
         originalList->append(item);
     }
 
-    for (QString compareItem : *comparisonCountry) {
+    for (QString compareItem : countryToCompare) {
         comparisonList->append(compareItem);
     }
 
@@ -36,24 +36,3 @@ void ComparisonDialog::on_pushButton_clicked()
     this->reject();
 }
 
-void ComparisonDialog::reveiveVector(std::vector<QString> &original, std::vector<QString> &comparison)
-{
-    *originalCountry = original;
-    *comparisonCountry = comparison;
-}
-
-
-/*ui->setupUi(this);
-    ui->listView->setSelectionMode(QAbstractItemView::SingleSelection);
-    list = new QStringList();
-    model = new QStringListModel(*list, NULL);
-
-    listOfCountries = loader();
-
-
-    for (std::vector<QString> country : listOfCountries) {
-        list->append(country.at(0));
-    }
-
-    model->setStringList(*list);
-    ui->listView->setModel(model);*/

@@ -18,14 +18,18 @@ public:
     explicit selectionDialog(QString selectedCountry, std::vector<std::vector<QString>> &listOfCountries, QWidget *parent = nullptr);
     ~selectionDialog();
 
+    std::vector<std::vector<QString>> allCountries;
+
 
 private slots:
     void on_buttonBox_accepted();
 
+    void on_comboBox_highlighted(int index);
+
 private:
     Ui::selectionDialog *ui;
     std::vector<QString> originalCountry;
-    std::vector<QString> comparisonCountry;
+    int selectionIndex;
 };
 
 #endif // SELECTIONDIALOG_H
