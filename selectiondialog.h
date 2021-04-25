@@ -15,21 +15,15 @@ class selectionDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit selectionDialog(QWidget *parent = nullptr);
+    explicit selectionDialog(QString selectedCountry, std::vector<std::vector<QString>> &listOfCountries, QWidget *parent = nullptr);
     ~selectionDialog();
-
-signals:
-    void sendVectors(std::vector<QString> originalCountry, std::vector<QString> comparisonCountry);
 
 
 private slots:
-    //void on_buttonBox_accepted();
-    void receiveCountrySignla(std::vector<std::vector<QString>>, QString);
+    void on_buttonBox_accepted();
 
 private:
     Ui::selectionDialog *ui;
-    std::vector<std::vector<QString>> *listOfCountries;
-    QString *selectedCountry;
     std::vector<QString> originalCountry;
     std::vector<QString> comparisonCountry;
 };
