@@ -3,46 +3,46 @@
 #include <QFile>
 #include <QTextStream>
 #include <QDebug>
+#include "loader.h"
+#include "selectiondialog.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->listView->setSelectionMode(QAbstractItemView::SingleSelection);
+    list = new QStringList();
+    model = new QStringListModel(*list, NULL);
 
-    std::vector<QString> country;
-    // Open the file from the directory
-    QFile file("../countries.csv");
-    if ( !file.open(QFile::ReadOnly | QFile::Text) ) {
-        qDebug() << "File not exists";
-    } else {
-        //Create a thread to retrieve data from a file
-        QTextStream in(&file);
-        //Reads the data up to the end of file
-        while (!in.atEnd())
-        {
-            QString line = in.readLine();
+    listOfCountries = loader();
 
-            // consider that the line separated by semicolons into columns
-            for (QString item : line.split(",")) {
-                country.push_back(item);
-            }
-
-            listOfCountries.push_back(country);
-            country.clear();
-
-        }
-    }
-    file.close();
 
     for (std::vector<QString> country : listOfCountries) {
-        ui->listWidget->addItem(country.at(0));
+        list->append(country.at(0));
     }
+
+    model->setStringList(*list);
+    ui->listView->setModel(model);
 
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-    delete csvModel;
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    QModelIndexList selectedIndexes(ui->listView->selectionModel()->selectedIndexes());
+    QString country = selectedIndexes.at(0).data().toString();
+    qDebug() << country;
+    selectionDialog *dialog = new selectionDialog();
+    emit sendCountries(listOfCountries, country);
+    Qt::WindowFlags flags(Qt::WindowTitleHint);
+    dialog->setWindowFlags(flags);
+    dialog->setAttribute(Qt::WA_DeleteOnClose);
+    dialog->setModal(true);
+    dialog->exec();
+}
+

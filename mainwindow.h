@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QStandardItemModel>
+#include <QStringListModel>
 #include "country.h"
 #include <vector>
 #include <iostream>
@@ -18,11 +19,20 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    QStringList* list;
+    QStringListModel* model;
+    std::vector<std::vector<QString>> listOfCountries;
+
+private slots:
+    void on_pushButton_clicked();
+
+signals:
+    void sendCountries(std::vector<std::vector<QString>>, QString country);
 
 private:
     Ui::MainWindow *ui;
-    QStandardItemModel *csvModel;
-    std::vector<std::vector<QString>> listOfCountries;
+
+
 };
 
 #endif // MAINWINDOW_H
