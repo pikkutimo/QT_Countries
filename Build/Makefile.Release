@@ -350,11 +350,9 @@ release/moc_mainwindow.cpp: ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItemModel \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		release/moc_predefs.h \
@@ -833,11 +831,9 @@ release/main.o: ../main.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItemModel \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
@@ -956,11 +952,9 @@ release/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItemModel \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		ui_mainwindow.h \
@@ -1001,13 +995,8 @@ release/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QPushButton \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qpushbutton.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpacerItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHeaderView \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qheaderview.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QStatusBar \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstatusbar.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTableView \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtableview.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QToolBar \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtoolbar.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
