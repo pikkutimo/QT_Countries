@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>412</width>
-    <height>134</height>
+    <width>408</width>
+    <height>178</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -44,10 +44,10 @@
    <item row="1" column="1">
     <widget class="QComboBox" name="comboBox"/>
    </item>
-   <item row="2" column="0">
+   <item row="3" column="0">
     <widget class="QCheckBox" name="checkBox">
      <property name="text">
-      <string>Select Random</string>
+      <string>Choose Random</string>
      </property>
     </widget>
    </item>

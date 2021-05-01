@@ -23,43 +23,77 @@ class Ui_ComparisonDialog
 {
 public:
     QGridLayout *gridLayout;
+    QLabel *comparisonLabel;
     QLabel *originalLabel;
+    QPushButton *pushButton;
+    QListView *itemsListView;
     QListView *originalListView;
     QListView *comparisonListView;
-    QLabel *comparisonLabel;
-    QPushButton *pushButton;
+    QLabel *compareImageLabel;
+    QLabel *originalImageLabel;
 
     void setupUi(QDialog *ComparisonDialog)
     {
         if (ComparisonDialog->objectName().isEmpty())
             ComparisonDialog->setObjectName(QString::fromUtf8("ComparisonDialog"));
-        ComparisonDialog->resize(673, 466);
+        ComparisonDialog->resize(600, 562);
+        ComparisonDialog->setMinimumSize(QSize(600, 550));
         gridLayout = new QGridLayout(ComparisonDialog);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        originalLabel = new QLabel(ComparisonDialog);
-        originalLabel->setObjectName(QString::fromUtf8("originalLabel"));
-
-        gridLayout->addWidget(originalLabel, 1, 1, 1, 1);
-
-        originalListView = new QListView(ComparisonDialog);
-        originalListView->setObjectName(QString::fromUtf8("originalListView"));
-
-        gridLayout->addWidget(originalListView, 2, 1, 1, 1);
-
-        comparisonListView = new QListView(ComparisonDialog);
-        comparisonListView->setObjectName(QString::fromUtf8("comparisonListView"));
-
-        gridLayout->addWidget(comparisonListView, 2, 2, 1, 1);
-
         comparisonLabel = new QLabel(ComparisonDialog);
         comparisonLabel->setObjectName(QString::fromUtf8("comparisonLabel"));
+        QFont font;
+        font.setPointSize(16);
+        comparisonLabel->setFont(font);
+        comparisonLabel->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(comparisonLabel, 1, 2, 1, 1);
+
+        originalLabel = new QLabel(ComparisonDialog);
+        originalLabel->setObjectName(QString::fromUtf8("originalLabel"));
+        originalLabel->setFont(font);
+        originalLabel->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(originalLabel, 1, 1, 1, 1);
 
         pushButton = new QPushButton(ComparisonDialog);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
-        gridLayout->addWidget(pushButton, 3, 0, 1, 3);
+        gridLayout->addWidget(pushButton, 4, 0, 1, 3);
+
+        itemsListView = new QListView(ComparisonDialog);
+        itemsListView->setObjectName(QString::fromUtf8("itemsListView"));
+        itemsListView->setAutoFillBackground(false);
+        itemsListView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        itemsListView->setSelectionMode(QAbstractItemView::NoSelection);
+
+        gridLayout->addWidget(itemsListView, 3, 0, 1, 1);
+
+        originalListView = new QListView(ComparisonDialog);
+        originalListView->setObjectName(QString::fromUtf8("originalListView"));
+        originalListView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        originalListView->setSelectionMode(QAbstractItemView::SingleSelection);
+        originalListView->setSelectionBehavior(QAbstractItemView::SelectItems);
+
+        gridLayout->addWidget(originalListView, 3, 1, 1, 1);
+
+        comparisonListView = new QListView(ComparisonDialog);
+        comparisonListView->setObjectName(QString::fromUtf8("comparisonListView"));
+        comparisonListView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        comparisonListView->setSelectionMode(QAbstractItemView::SingleSelection);
+
+        gridLayout->addWidget(comparisonListView, 3, 2, 1, 1);
+
+        compareImageLabel = new QLabel(ComparisonDialog);
+        compareImageLabel->setObjectName(QString::fromUtf8("compareImageLabel"));
+
+        gridLayout->addWidget(compareImageLabel, 2, 2, 1, 1);
+
+        originalImageLabel = new QLabel(ComparisonDialog);
+        originalImageLabel->setObjectName(QString::fromUtf8("originalImageLabel"));
+        originalImageLabel->setMinimumSize(QSize(85, 65));
+
+        gridLayout->addWidget(originalImageLabel, 2, 1, 1, 1);
 
 
         retranslateUi(ComparisonDialog);
@@ -70,9 +104,11 @@ public:
     void retranslateUi(QDialog *ComparisonDialog)
     {
         ComparisonDialog->setWindowTitle(QCoreApplication::translate("ComparisonDialog", "Dialog", nullptr));
-        originalLabel->setText(QCoreApplication::translate("ComparisonDialog", "Country", nullptr));
         comparisonLabel->setText(QCoreApplication::translate("ComparisonDialog", "Country to compare", nullptr));
+        originalLabel->setText(QCoreApplication::translate("ComparisonDialog", "Country", nullptr));
         pushButton->setText(QCoreApplication::translate("ComparisonDialog", "OK", nullptr));
+        compareImageLabel->setText(QCoreApplication::translate("ComparisonDialog", "TextLabel", nullptr));
+        originalImageLabel->setText(QCoreApplication::translate("ComparisonDialog", "TextLabel", nullptr));
     } // retranslateUi
 
 };
