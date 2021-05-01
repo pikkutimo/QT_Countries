@@ -34,7 +34,6 @@ private slots:
 private:
     Ui::selectionDialog *ui;
     std::vector<QString> originalCountry;
-    std::vector<QString> *comparisonCountry;
     int selectionIndex;
     int chosenIndex;
 };

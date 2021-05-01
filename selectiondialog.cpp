@@ -36,8 +36,9 @@ selectionDialog::~selectionDialog()
 
 void selectionDialog::on_buttonBox_accepted()
 {
+    std::vector<QString> comparisonCountry = allCountries[selectionIndex];
     // Create comparison Dialog
-    ComparisonDialog *comparison = new ComparisonDialog(originalCountry, originalCountry);
+    ComparisonDialog *comparison = new ComparisonDialog(originalCountry, comparisonCountry);
     Qt::WindowFlags flags(Qt::WindowTitleHint);
     comparison->setWindowFlags(flags);
     comparison->setAttribute(Qt::WA_DeleteOnClose);
