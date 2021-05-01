@@ -24,8 +24,6 @@ public:
     QStringListModel* comparisonModel;
     QStringList* titlesList;
     QStringListModel* titlesModel;
-    QLabel* originalImageLabel;
-    QLabel* compareImageLabel;
     void fillTitles();
     void loadFlags();
 

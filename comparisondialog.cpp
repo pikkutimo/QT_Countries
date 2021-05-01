@@ -43,23 +43,7 @@ ComparisonDialog::ComparisonDialog(std::vector<QString> originalCountry, std::ve
     ui->originalListView->setModel(originalModel);
     ui->comparisonListView->setModel(comparisonModel);
 
-    /*QString path = ":/img/flags/";
-    QString filetype = ".png";
-
-    QString originalPath = path + originalList->last() + filetype;
-    QString comparisonPath = path + comparisonList->last() + filetype;
-
-    QPixmap original(":/img/flags/ad.png");
-    QPixmap comparison(":/img/flags/ae.png");
-
-    originalImageLabel->setPixmap(original);
-    originalImageLabel->setMask(original.mask());
-
-    compareImageLabel->setPixmap(comparison);
-    compareImageLabel->setMask(comparison.mask());
-
-    originalImageLabel->show();
-    compareImageLabel->show();*/
+    loadFlags();
 }
 
 ComparisonDialog::~ComparisonDialog()
@@ -104,11 +88,14 @@ void ComparisonDialog::loadFlags()
     QPixmap original(originalPath);
     QPixmap comparison(comparisonPath);
 
-    originalImageLabel->setPixmap(original);
-    originalImageLabel->setMask(original.mask());
+    ui->originalImageLabel->setPixmap(original);
+    ui->originalImageLabel->setMask(original.mask());
 
-    compareImageLabel->setPixmap(comparison);
-    compareImageLabel->setMask(comparison.mask());
+    ui->compareImageLabel->setPixmap(comparison);
+    ui->compareImageLabel->setMask(comparison.mask());
+
+    ui->originalImageLabel->show();
+    ui->compareImageLabel->show();
 }
 
 void ComparisonDialog::on_pushButton_clicked()

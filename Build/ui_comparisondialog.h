@@ -107,8 +107,7 @@ public:
         comparisonLabel->setText(QCoreApplication::translate("ComparisonDialog", "Country to compare", nullptr));
         originalLabel->setText(QCoreApplication::translate("ComparisonDialog", "Country", nullptr));
         pushButton->setText(QCoreApplication::translate("ComparisonDialog", "OK", nullptr));
-        compareImageLabel->setText(QCoreApplication::translate("ComparisonDialog", "TextLabel", nullptr));
-        originalImageLabel->setText(QCoreApplication::translate("ComparisonDialog", "TextLabel", nullptr));
+        compareImageLabel->setText(QString());
     } // retranslateUi
 
 };
