@@ -47,7 +47,7 @@ ComparisonDialog::ComparisonDialog(std::vector<QString> originalCountry, std::ve
     QString filetype = ".png";
 
     QString originalPath = path + originalList->last() + filetype;
-    QString comparisonPath = path + comparisonList->last() + filetype;*/
+    QString comparisonPath = path + comparisonList->last() + filetype;
 
     QPixmap original(":/img/flags/ad.png");
     QPixmap comparison(":/img/flags/ae.png");
@@ -59,7 +59,7 @@ ComparisonDialog::ComparisonDialog(std::vector<QString> originalCountry, std::ve
     compareImageLabel->setMask(comparison.mask());
 
     originalImageLabel->show();
-    compareImageLabel->show();
+    compareImageLabel->show();*/
 }
 
 ComparisonDialog::~ComparisonDialog()

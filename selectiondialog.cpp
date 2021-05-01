@@ -37,7 +37,7 @@ selectionDialog::~selectionDialog()
 void selectionDialog::on_buttonBox_accepted()
 {
     // Create comparison Dialog
-    ComparisonDialog *comparison = new ComparisonDialog(originalCountry, *comparisonCountry);
+    ComparisonDialog *comparison = new ComparisonDialog(originalCountry, originalCountry);
     Qt::WindowFlags flags(Qt::WindowTitleHint);
     comparison->setWindowFlags(flags);
     comparison->setAttribute(Qt::WA_DeleteOnClose);
@@ -49,8 +49,7 @@ void selectionDialog::on_buttonBox_accepted()
 void selectionDialog::on_comboBox_highlighted(int index)
 {
     selectionIndex = index;
-    comparisonCountry = &allCountries.at(selectionIndex);
-    qDebug() << comparisonCountry->at(0);
+    qDebug() << index;
 }
 
 // Function to select country randomly from the comboBox
