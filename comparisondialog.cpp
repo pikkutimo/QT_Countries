@@ -19,8 +19,9 @@ ComparisonDialog::ComparisonDialog(std::vector<QString> originalCountry, std::ve
     fillTitles();
 
     ui->originalLabel->setText(originalCountry.at(0));
+    ui->comparisonLabel->setText(countryToCompare.at(0));
 
-    // Read data to listView of the selected country
+    /* Read data to listView of the selected country
     for (QString &item: originalCountry) {
         if (item!=originalCountry.at(0))
             originalList->append(item);
@@ -32,7 +33,11 @@ ComparisonDialog::ComparisonDialog(std::vector<QString> originalCountry, std::ve
     for (QString &compareItem : countryToCompare) {
         if (compareItem!=countryToCompare.at(0))
             comparisonList->append(compareItem);
-    }
+    }*/
+
+    fillCountry(originalCountry, originalList);
+    fillCountry(countryToCompare, comparisonList);
+
     ui->itemsListView->setStyleSheet("background-color: transparent; border: none;");
 
     titlesModel->setStringList(*titlesList);
@@ -51,8 +56,19 @@ ComparisonDialog::~ComparisonDialog()
     delete ui;
 }
 
+void ComparisonDialog::fillCountry(std::vector<QString> &country, QStringList* listOfCountry)
+{
+    // Read data to listView of the selected country
+    for (QString &item: country) {
+        if (item!=country.at(0))
+            listOfCountry->append(item);
+    }
+}
+
 void ComparisonDialog::fillTitles()
 {
+    // Wanted something translatable, so reading from csv wasn't
+    // an option
     const QString CAPITAL = QObject::tr("Capital");
     const QString POPULATION = QObject::tr("Population");
     const QString AREA = QObject::tr("Area (square miles)");

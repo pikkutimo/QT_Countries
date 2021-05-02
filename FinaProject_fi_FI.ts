@@ -272,17 +272,22 @@
         <translation>Valitse</translation>
     </message>
     <message>
-        <location filename="selectiondialog.ui" line="33"/>
+        <location filename="selectiondialog.ui" line="41"/>
         <source>Selected country</source>
         <translation>Valittu maa</translation>
     </message>
     <message>
-        <location filename="selectiondialog.ui" line="40"/>
+        <location filename="selectiondialog.ui" line="48"/>
+        <source>Max population</source>
+        <translation>Väestö maksimissaan</translation>
+    </message>
+    <message>
+        <location filename="selectiondialog.ui" line="34"/>
         <source>Compare to</source>
         <translation>Vertailuun</translation>
     </message>
     <message>
-        <location filename="selectiondialog.ui" line="50"/>
+        <location filename="selectiondialog.ui" line="20"/>
         <source>Choose Random</source>
         <translation>Valitse satunnainen</translation>
     </message>

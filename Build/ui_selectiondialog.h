@@ -31,7 +31,7 @@ public:
     QLabel *chooseActionLabel;
     QLabel *selectedCountryLabel;
     QLabel *label;
-    QLabel *label_2;
+    QLabel *maxPopulationLabel;
     QLineEdit *selectedCountryLineEdit;
     QComboBox *comboBox;
     QDialogButtonBox *buttonBox;
@@ -69,11 +69,11 @@ public:
 
         gridLayout->addWidget(label, 1, 0, 1, 1);
 
-        label_2 = new QLabel(selectionDialog);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setMinimumSize(QSize(50, 0));
+        maxPopulationLabel = new QLabel(selectionDialog);
+        maxPopulationLabel->setObjectName(QString::fromUtf8("maxPopulationLabel"));
+        maxPopulationLabel->setMinimumSize(QSize(50, 0));
 
-        gridLayout->addWidget(label_2, 1, 2, 1, 1);
+        gridLayout->addWidget(maxPopulationLabel, 1, 2, 1, 1);
 
         selectedCountryLineEdit = new QLineEdit(selectionDialog);
         selectedCountryLineEdit->setObjectName(QString::fromUtf8("selectedCountryLineEdit"));
@@ -107,7 +107,7 @@ public:
         chooseActionLabel->setText(QCoreApplication::translate("selectionDialog", "Compare to", nullptr));
         selectedCountryLabel->setText(QCoreApplication::translate("selectionDialog", "Selected country", nullptr));
         label->setText(QCoreApplication::translate("selectionDialog", "Max population", nullptr));
-        label_2->setText(QString());
+        maxPopulationLabel->setText(QString());
     } // retranslateUi
 
 };

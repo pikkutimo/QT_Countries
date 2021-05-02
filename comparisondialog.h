@@ -24,6 +24,7 @@ public:
     QStringListModel* comparisonModel;
     QStringList* titlesList;
     QStringListModel* titlesModel;
+    void fillCountry(std::vector<QString> &, QStringList*);
     void fillTitles();
     void loadFlags();
 

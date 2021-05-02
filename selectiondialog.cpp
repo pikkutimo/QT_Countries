@@ -27,22 +27,13 @@ selectionDialog::selectionDialog(QString selectedCountry, std::vector<std::vecto
             ui->comboBox->addItem(country.at(0));
             chosenIndex = index;
         }
+
         countryPopulation = country.at(2).toInt();
-
-        if (countryPopulation < minPopulation) {
-            minPopulation = countryPopulation;
-        }
-
-        if (countryPopulation > maxPopulation) {
-            maxPopulation = countryPopulation;
-        }
+        checkPopulationValues(countryPopulation);
 
     }
 
-    ui->limitSlider->setMinimum(minPopulation);
-    ui->limitSlider->setMaximum(maxPopulation);
-    ui->limitSlider->setValue(maxPopulation);
-    ui->label_2->setText(QString::number(maxPopulation));
+    updateSlider();
 
     // Make the previously selected country unselectable
     qobject_cast<QStandardItemModel*>(ui->comboBox->model())->item(chosenIndex)->setEnabled(false);
@@ -82,10 +73,10 @@ void selectionDialog::on_checkBox_toggled(bool checked)
     }
 }
 
-void selectionDialog::on_limitSlider_valueChanged(int value)
+void selectionDialog::on_limitSlider_valueChanged(int sliderValue)
 {
-    populationLimit = value;
-    ui->label_2->setText(QString::number(populationLimit));
+    populationLimit = sliderValue;
+    ui->maxPopulationLabel->setText(QString::number(populationLimit));
     updateComboBox();
 }
 
@@ -105,5 +96,24 @@ void selectionDialog::updateComboBox()
             ui->comboBox->addItem(country.at(0));
             chosenIndex = comboBoxIndex;
         }
+    }
+}
+
+void selectionDialog::updateSlider()
+{
+    ui->limitSlider->setMinimum(minPopulation);
+    ui->limitSlider->setMaximum(maxPopulation);
+    ui->limitSlider->setValue(maxPopulation);
+    ui->maxPopulationLabel->setText(QString::number(maxPopulation));
+}
+
+void selectionDialog::checkPopulationValues(int &countryPopulation)
+{
+    if (countryPopulation < minPopulation) {
+        minPopulation = countryPopulation;
+    }
+
+    if (countryPopulation > maxPopulation) {
+        maxPopulation = countryPopulation;
     }
 }

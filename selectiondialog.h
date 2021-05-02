@@ -43,6 +43,8 @@ private:
     int minPopulation;
     int populationLimit;
     void updateComboBox();
+    void updateSlider();
+    void checkPopulationValues(int &);
 };
 
 #endif // SELECTIONDIALOG_H
