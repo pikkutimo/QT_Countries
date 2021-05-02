@@ -219,3 +219,24 @@ void MainWindow::on_listView_clicked(const QModelIndex &index)
     updateCountryAttributes();
 
 }
+
+void MainWindow::on_randomPushButton_clicked()
+{
+    int index = QRandomGenerator::global()->bounded(0,listOfCountries.size());
+    QString name = listOfCountries.at(index).at(0);
+
+    const QModelIndexList indexes = model->match(
+                model->index(0, 0),
+                Qt::DisplayRole,
+                name,
+                1,
+                Qt::MatchExactly
+                );
+
+    if(indexes.size() > 0) {
+        ui->listView->setCurrentIndex(indexes.at(0));
+    }
+
+    ui->pushButton->setEnabled(true);
+    updateCountryAttributes();
+}

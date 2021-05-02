@@ -5,6 +5,7 @@
 #include <QStringListModel>
 #include <QCloseEvent>
 #include <QMessageBox>
+#include <QRandomGenerator>
 #include "country.h"
 #include <vector>
 #include <iostream>
@@ -43,6 +44,8 @@ private slots:
     void on_sortByAreaButton_clicked();
 
     void on_listView_clicked(const QModelIndex &index);
+
+    void on_randomPushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
