@@ -50,7 +50,7 @@ void selectionDialog::on_buttonBox_accepted()
 void selectionDialog::on_comboBox_highlighted(int index)
 {
     selectionIndex = index;
-    qDebug() << index;
+    //qDebug() << index;
 }
 
 // Function to select country randomly from the comboBox

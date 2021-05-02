@@ -29,10 +29,11 @@ public:
     QGridLayout *gridLayout_2;
     QPushButton *pushButton;
     QGridLayout *gridLayout;
-    QRadioButton *sortAlphabeticallyButton;
     QRadioButton *sortByAreaButton;
+    QRadioButton *sortAlphabeticallyButton;
     QListView *listView;
     QListView *countryListView;
+    QPushButton *randomPushButton;
     QRadioButton *sortByPopulationButton;
     QStatusBar *statusbar;
     QToolBar *toolBar;
@@ -54,15 +55,15 @@ public:
 
         gridLayout = new QGridLayout();
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        sortAlphabeticallyButton = new QRadioButton(centralwidget);
-        sortAlphabeticallyButton->setObjectName(QString::fromUtf8("sortAlphabeticallyButton"));
-
-        gridLayout->addWidget(sortAlphabeticallyButton, 4, 0, 1, 2);
-
         sortByAreaButton = new QRadioButton(centralwidget);
         sortByAreaButton->setObjectName(QString::fromUtf8("sortByAreaButton"));
 
         gridLayout->addWidget(sortByAreaButton, 3, 0, 1, 2);
+
+        sortAlphabeticallyButton = new QRadioButton(centralwidget);
+        sortAlphabeticallyButton->setObjectName(QString::fromUtf8("sortAlphabeticallyButton"));
+
+        gridLayout->addWidget(sortAlphabeticallyButton, 4, 0, 1, 2);
 
         listView = new QListView(centralwidget);
         listView->setObjectName(QString::fromUtf8("listView"));
@@ -77,6 +78,11 @@ public:
         countryListView->setFont(font);
 
         gridLayout->addWidget(countryListView, 0, 2, 1, 1);
+
+        randomPushButton = new QPushButton(centralwidget);
+        randomPushButton->setObjectName(QString::fromUtf8("randomPushButton"));
+
+        gridLayout->addWidget(randomPushButton, 3, 2, 1, 1);
 
 
         gridLayout_2->addLayout(gridLayout, 0, 1, 1, 1);
@@ -103,8 +109,9 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Countries of the World", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Compare", nullptr));
-        sortAlphabeticallyButton->setText(QCoreApplication::translate("MainWindow", "Sort by Name", nullptr));
         sortByAreaButton->setText(QCoreApplication::translate("MainWindow", "Sort by Area", nullptr));
+        sortAlphabeticallyButton->setText(QCoreApplication::translate("MainWindow", "Sort by Name", nullptr));
+        randomPushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         sortByPopulationButton->setText(QCoreApplication::translate("MainWindow", "Sort by Population", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar", nullptr));
     } // retranslateUi

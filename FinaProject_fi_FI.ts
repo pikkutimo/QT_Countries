@@ -37,22 +37,31 @@
         <translation>Vertaile</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="33"/>
+        <location filename="mainwindow.ui" line="40"/>
         <source>Sort by Name</source>
         <translation>Lajittele nimen mukaan</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="40"/>
+        <location filename="mainwindow.ui" line="65"/>
+        <source>Select Random</source>
+        <translation>Valitse satunnainen</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="33"/>
         <source>Sort by Area</source>
         <translation>Lajittele koon mukaan</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="67"/>
+        <source>PushButton</source>
+        <translation type="obsolete">Valitse satunnainen</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="74"/>
         <source>Sort by Population</source>
         <translation>Lajittele väkimäärän mukaan</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="76"/>
+        <location filename="mainwindow.ui" line="83"/>
         <source>toolBar</source>
         <translation></translation>
     </message>

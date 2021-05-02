@@ -21,7 +21,7 @@ ComparisonDialog::ComparisonDialog(std::vector<QString> originalCountry, std::ve
     ui->originalLabel->setText(originalCountry.at(0));
 
     // Read data to listView of the selected country
-    for (QString item: originalCountry) {
+    for (QString &item: originalCountry) {
         if (item!=originalCountry.at(0))
             originalList->append(item);
     }
@@ -29,7 +29,7 @@ ComparisonDialog::ComparisonDialog(std::vector<QString> originalCountry, std::ve
     ui->comparisonLabel->setText(countryToCompare.at(0));
 
     // Read data to listView of the comparison country
-    for (QString compareItem : countryToCompare) {
+    for (QString &compareItem : countryToCompare) {
         if (compareItem!=countryToCompare.at(0))
             comparisonList->append(compareItem);
     }
@@ -100,11 +100,16 @@ void ComparisonDialog::fillTitles()
 
 void ComparisonDialog::loadFlags()
 {
-    QString path = ":/img/flags/";
-    QString filetype = ".png";
+    const QString path = ":/img/flags/";
+    const QString filetype = ".png";
 
-    QString originalPath = path + originalList->last() + filetype;
-    QString comparisonPath = path + comparisonList->last() + filetype;
+    QString originalPath = originalList->last();
+    originalPath.prepend(path);
+    originalPath.append(filetype);
+
+    QString comparisonPath = comparisonList->last();
+    comparisonPath.prepend(path);
+    comparisonPath.append(filetype);
 
     QPixmap original(originalPath);
     QPixmap comparison(comparisonPath);
