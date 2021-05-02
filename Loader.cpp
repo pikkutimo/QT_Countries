@@ -20,7 +20,7 @@ std::vector<std::vector<QString>> loader() {
             QString line = in.readLine();
 
             // consider that the line separated by semicolons into columns
-            for (QString item : line.split(",")) {
+            for (auto &item : line.split(",")) {
                 country.push_back(item);
             }
 

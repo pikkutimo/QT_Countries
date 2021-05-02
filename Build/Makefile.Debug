@@ -613,12 +613,10 @@ debug/moc_mainwindow.cpp: ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
-	
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QCloseEvent \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMessageBox \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmessagebox.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
-	flags
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		debug/moc_predefs.h \
@@ -1114,13 +1112,10 @@ debug/main.o: ../main.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
-<<<<<<< HEAD
-=======
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QCloseEvent \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMessageBox \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmessagebox.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
->>>>>>> flags
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
@@ -1242,13 +1237,10 @@ debug/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
-<<<<<<< HEAD
-=======
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QCloseEvent \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMessageBox \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmessagebox.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
->>>>>>> flags
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		ui_mainwindow.h \
@@ -1284,11 +1276,8 @@ debug/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QPushButton \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qpushbutton.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
-<<<<<<< HEAD
-=======
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QRadioButton \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qradiobutton.h \
->>>>>>> flags
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QStatusBar \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstatusbar.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QToolBar \
