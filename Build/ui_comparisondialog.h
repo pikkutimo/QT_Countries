@@ -36,8 +36,8 @@ public:
     {
         if (ComparisonDialog->objectName().isEmpty())
             ComparisonDialog->setObjectName(QString::fromUtf8("ComparisonDialog"));
-        ComparisonDialog->resize(600, 562);
-        ComparisonDialog->setMinimumSize(QSize(600, 550));
+        ComparisonDialog->resize(640, 562);
+        ComparisonDialog->setMinimumSize(QSize(640, 530));
         gridLayout = new QGridLayout(ComparisonDialog);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         comparisonLabel = new QLabel(ComparisonDialog);
@@ -45,14 +45,14 @@ public:
         QFont font;
         font.setPointSize(16);
         comparisonLabel->setFont(font);
-        comparisonLabel->setAlignment(Qt::AlignCenter);
+        comparisonLabel->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         gridLayout->addWidget(comparisonLabel, 1, 2, 1, 1);
 
         originalLabel = new QLabel(ComparisonDialog);
         originalLabel->setObjectName(QString::fromUtf8("originalLabel"));
         originalLabel->setFont(font);
-        originalLabel->setAlignment(Qt::AlignCenter);
+        originalLabel->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         gridLayout->addWidget(originalLabel, 1, 1, 1, 1);
 
@@ -63,6 +63,11 @@ public:
 
         itemsListView = new QListView(ComparisonDialog);
         itemsListView->setObjectName(QString::fromUtf8("itemsListView"));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(itemsListView->sizePolicy().hasHeightForWidth());
+        itemsListView->setSizePolicy(sizePolicy);
         itemsListView->setAutoFillBackground(false);
         itemsListView->setEditTriggers(QAbstractItemView::NoEditTriggers);
         itemsListView->setSelectionMode(QAbstractItemView::NoSelection);
@@ -71,6 +76,8 @@ public:
 
         originalListView = new QListView(ComparisonDialog);
         originalListView->setObjectName(QString::fromUtf8("originalListView"));
+        sizePolicy.setHeightForWidth(originalListView->sizePolicy().hasHeightForWidth());
+        originalListView->setSizePolicy(sizePolicy);
         originalListView->setEditTriggers(QAbstractItemView::NoEditTriggers);
         originalListView->setSelectionMode(QAbstractItemView::SingleSelection);
         originalListView->setSelectionBehavior(QAbstractItemView::SelectItems);
@@ -79,6 +86,8 @@ public:
 
         comparisonListView = new QListView(ComparisonDialog);
         comparisonListView->setObjectName(QString::fromUtf8("comparisonListView"));
+        sizePolicy.setHeightForWidth(comparisonListView->sizePolicy().hasHeightForWidth());
+        comparisonListView->setSizePolicy(sizePolicy);
         comparisonListView->setEditTriggers(QAbstractItemView::NoEditTriggers);
         comparisonListView->setSelectionMode(QAbstractItemView::SingleSelection);
 
