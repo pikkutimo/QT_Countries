@@ -42,14 +42,18 @@
         <translation>Lajittele nimen mukaan</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="65"/>
+        <source>Select Random</source>
+        <translation>Valitse satunnainen</translation>
+    </message>
+    <message>
         <location filename="mainwindow.ui" line="33"/>
         <source>Sort by Area</source>
         <translation>Lajittele koon mukaan</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="65"/>
         <source>PushButton</source>
-        <translation type="unfinished">Valitse satunnainen</translation>
+        <translation type="obsolete">Valitse satunnainen</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="74"/>

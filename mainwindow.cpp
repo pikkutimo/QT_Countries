@@ -187,8 +187,6 @@ void MainWindow::on_sortByPopulationButton_clicked()
 {
     // Use std::sort through the data
     std::sort(listOfCountries.begin(), listOfCountries.end(), sortByPopulation);
-    // Clear the listView of all countries
-    countryModel->removeRows(0, countryModel->rowCount());
     // Disable the select Button
     ui->pushButton->setEnabled(false);
 
@@ -198,7 +196,6 @@ void MainWindow::on_sortByPopulationButton_clicked()
 void MainWindow::on_sortAlphabeticallyButton_clicked()
 {
     std::sort(listOfCountries.begin(), listOfCountries.end(), sortByName);
-    countryModel->removeRows(0, countryModel->rowCount());
     ui->pushButton->setEnabled(false);
     updateList();
 }
@@ -207,7 +204,6 @@ void MainWindow::on_sortByAreaButton_clicked()
 {
     std::sort(listOfCountries.begin(), listOfCountries.end(), sortByArea);
     ui->pushButton->setEnabled(false);
-    countryModel->removeRows(0, countryModel->rowCount());
     updateList();
 }
 
