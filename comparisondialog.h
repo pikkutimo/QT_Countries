@@ -3,6 +3,9 @@
 
 #include <QDialog>
 #include <QStringListModel>
+#include <QLabel>
+#include <QBitmap>
+#include <QPixmap>
 
 namespace Ui {
 class ComparisonDialog;
@@ -19,10 +22,13 @@ public:
     QStringListModel* originalModel;
     QStringList* comparisonList;
     QStringListModel* comparisonModel;
+    QStringList* titlesList;
+    QStringListModel* titlesModel;
+    void fillTitles();
+    void loadFlags();
 
 private slots:
     void on_pushButton_clicked();
-
 
 private:
     Ui::ComparisonDialog *ui;

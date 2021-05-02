@@ -119,7 +119,261 @@ compiler_rcc_make_all: debug/qrc_resources.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_resources.cpp
 debug/qrc_resources.cpp: ../resources.qrc \
-		../../../../Qt/5.15.2/mingw81_64/bin/rcc.exe
+		../../../../Qt/5.15.2/mingw81_64/bin/rcc.exe \
+		../flags/ca.png \
+		../flags/ss.png \
+		../flags/ky.png \
+		../flags/tc.png \
+		../flags/li.png \
+		../flags/tr.png \
+		../flags/do.png \
+		../flags/mh.png \
+		../flags/mw.png \
+		../flags/va.png \
+		../flags/ng.png \
+		../flags/fm.png \
+		../flags/gl.png \
+		../flags/pe.png \
+		../flags/hk.png \
+		../flags/pt.png \
+		../flags/bo.png \
+		../flags/sb.png \
+		../flags/kh.png \
+		../flags/cn.png \
+		../flags/kw.png \
+		../flags/dm.png \
+		../flags/lv.png \
+		../flags/mf.png \
+		../flags/mu.png \
+		../flags/ne.png \
+		../flags/vn.png \
+		../flags/fk.png \
+		../flags/gy.png \
+		../flags/pr.png \
+		../flags/bm.png \
+		../flags/so.png \
+		../flags/cl.png \
+		../flags/tn.png \
+		../flags/dk.png \
+		../flags/lt.png \
+		../flags/dz.png \
+		../flags/md.png \
+		../flags/um.png \
+		../flags/ms.png \
+		../flags/nc.png \
+		../flags/fi.png \
+		../flags/nr.png \
+		../flags/gh.png \
+		../flags/gw.png \
+		../flags/pa.png \
+		../flags/al.png \
+		../flags/je.png \
+		../flags/zw.png \
+		../flags/bz.png \
+		../flags/sm.png \
+		../flags/cy.png \
+		../flags/lc.png \
+		../flags/tl.png \
+		../flags/lr.png \
+		../flags/eh.png \
+		../flags/mq.png \
+		../flags/uz.png \
+		../flags/na.png \
+		../flags/np.png \
+		../flags/gf.png \
+		../flags/gu.png \
+		../flags/pn.png \
+		../flags/ht.png \
+		../flags/id.png \
+		../flags/is.png \
+		../flags/bi.png \
+		../flags/sk.png \
+		../flags/ch.png \
+		../flags/sz.png \
+		../flags/cw.png \
+		../flags/la.png \
+		../flags/tj.png \
+		../flags/mo.png \
+		../flags/gb-sct.png \
+		../flags/gd.png \
+		../flags/om.png \
+		../flags/gs.png \
+		../flags/pl.png \
+		../flags/hr.png \
+		../flags/ye.png \
+		../flags/yt.png \
+		../flags/iq.png \
+		../flags/aw.png \
+		../flags/bg.png \
+		../flags/jp.png \
+		../flags/bv.png \
+		../flags/si.png \
+		../flags/cf.png \
+		../flags/sx.png \
+		../flags/cu.png \
+		../flags/th.png \
+		../flags/de.png \
+		../flags/tw.png \
+		../flags/ug.png \
+		../flags/mm.png \
+		../flags/es.png \
+		../flags/nl.png \
+		../flags/vu.png \
+		../flags/fr.png \
+		../flags/gb.png \
+		../flags/gq.png \
+		../flags/py.png \
+		../flags/af.png \
+		../flags/io.png \
+		../flags/au.png \
+		../flags/be.png \
+		../flags/rw.png \
+		../flags/bt.png \
+		../flags/sg.png \
+		../flags/cd.png \
+		../flags/km.png \
+		../flags/sv.png \
+		../flags/tf.png \
+		../flags/mk.png \
+		../flags/mz.png \
+		../flags/gb-eng.png \
+		../flags/ph.png \
+		../flags/hn.png \
+		../flags/pw.png \
+		../flags/ad.png \
+		../flags/im.png \
+		../flags/as.png \
+		../flags/ru.png \
+		../flags/br.png \
+		../flags/se.png \
+		../flags/st.png \
+		../flags/kz.png \
+		../flags/td.png \
+		../flags/ly.png \
+		../flags/mx.png \
+		../flags/gm.png \
+		../flags/pf.png \
+		../flags/aq.png \
+		../flags/zm.png \
+		../flags/ba.png \
+		../flags/rs.png \
+		../flags/sc.png \
+		../flags/ki.png \
+		../flags/sr.png \
+		../flags/co.png \
+		../flags/ua.png \
+		../flags/mg.png \
+		../flags/mv.png \
+		../flags/nf.png \
+		../flags/nu.png \
+		../flags/ps.png \
+		../flags/ao.png \
+		../flags/bn.png \
+		../flags/sa.png \
+		../flags/kg.png \
+		../flags/cm.png \
+		../flags/to.png \
+		../flags/lu.png \
+		../flags/me.png \
+		../flags/mt.png \
+		../flags/fj.png \
+		../flags/gi.png \
+		../flags/gb-nir.png \
+		../flags/xk.png \
+		../flags/qa.png \
+		../flags/am.png \
+		../flags/ro.png \
+		../flags/bl.png \
+		../flags/ke.png \
+		../flags/sn.png \
+		../flags/ck.png \
+		../flags/cz.png \
+		../flags/tm.png \
+		../flags/dj.png \
+		../flags/ls.png \
+		../flags/mc.png \
+		../flags/mr.png \
+		../flags/gg.png \
+		../flags/hu.png \
+		../flags/ie.png \
+		../flags/it.png \
+		../flags/az.png \
+		../flags/bj.png \
+		../flags/by.png \
+		../flags/sl.png \
+		../flags/ci.png \
+		../flags/kr.png \
+		../flags/cx.png \
+		../flags/lb.png \
+		../flags/tk.png \
+		../flags/tz.png \
+		../flags/ma.png \
+		../flags/eg.png \
+		../flags/mp.png \
+		../flags/uy.png \
+		../flags/vi.png \
+		../flags/no.png \
+		../flags/ge.png \
+		../flags/gt.png \
+		../flags/pm.png \
+		../flags/ai.png \
+		../flags/ir.png \
+		../flags/ax.png \
+		../flags/bh.png \
+		../flags/bw.png \
+		../flags/sj.png \
+		../flags/cg.png \
+		../flags/kp.png \
+		../flags/sy.png \
+		../flags/cv.png \
+		../flags/ee.png \
+		../flags/mn.png \
+		../flags/et.png \
+		../flags/vg.png \
+		../flags/wf.png \
+		../flags/gr.png \
+		../flags/pk.png \
+		../flags/ag.png \
+		../flags/bf.png \
+		../flags/jo.png \
+		../flags/sh.png \
+		../flags/kn.png \
+		../flags/tg.png \
+		../flags/tv.png \
+		../flags/ec.png \
+		../flags/ml.png \
+		../flags/er.png \
+		../flags/ve.png \
+		../flags/nz.png \
+		../flags/ga.png \
+		../flags/ws.png \
+		../flags/gp.png \
+		../flags/ae.png \
+		../flags/in.png \
+		../flags/za.png \
+		../flags/at.png \
+		../flags/bd.png \
+		../flags/jm.png \
+		../flags/bs.png \
+		../flags/cc.png \
+		../flags/cr.png \
+		../flags/lk.png \
+		../flags/tt.png \
+		../flags/us.png \
+		../flags/my.png \
+		../flags/vc.png \
+		../flags/ni.png \
+		../flags/gb-wls.png \
+		../flags/fo.png \
+		../flags/gn.png \
+		../flags/pg.png \
+		../flags/hm.png \
+		../flags/il.png \
+		../flags/ar.png \
+		../flags/re.png \
+		../flags/bb.png \
+		../flags/bq.png \
+		../flags/sd.png
 	C:\Qt\5.15.2\mingw81_64\bin\rcc.exe -name resources ..\resources.qrc -o debug\qrc_resources.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h
@@ -239,6 +493,12 @@ debug/moc_comparisondialog.cpp: ../comparisondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QBitmap \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbitmap.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QPixmap \
 		debug/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	C:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include C:/Projects/QT/FinaProject/Build/debug/moc_predefs.h -IC:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -IC:/Projects/QT/FinaProject -IC:/Qt/5.15.2/mingw81_64/include -IC:/Qt/5.15.2/mingw81_64/include/QtWidgets -IC:/Qt/5.15.2/mingw81_64/include/QtGui -IC:/Qt/5.15.2/mingw81_64/include/QtANGLE -IC:/Qt/5.15.2/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\comparisondialog.h -o debug\moc_comparisondialog.cpp
@@ -353,6 +613,12 @@ debug/moc_mainwindow.cpp: ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+	
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QCloseEvent \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMessageBox \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmessagebox.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
+	flags
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		debug/moc_predefs.h \
@@ -469,7 +735,18 @@ debug/moc_selectiondialog.cpp: ../selectiondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QBitmap \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbitmap.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QPixmap \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QDebug \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QRandomGenerator \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrandom.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
 		debug/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	C:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include C:/Projects/QT/FinaProject/Build/debug/moc_predefs.h -IC:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -IC:/Projects/QT/FinaProject -IC:/Qt/5.15.2/mingw81_64/include -IC:/Qt/5.15.2/mingw81_64/include/QtWidgets -IC:/Qt/5.15.2/mingw81_64/include/QtGui -IC:/Qt/5.15.2/mingw81_64/include/QtANGLE -IC:/Qt/5.15.2/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\selectiondialog.h -o debug\moc_selectiondialog.cpp
@@ -613,6 +890,12 @@ debug/comparisondialog.o: ../comparisondialog.cpp ../comparisondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QBitmap \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbitmap.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QPixmap \
 		ui_comparisondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
@@ -627,9 +910,6 @@ debug/comparisondialog.o: ../comparisondialog.cpp ../comparisondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QListView \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlistview.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemview.h \
@@ -834,6 +1114,13 @@ debug/main.o: ../main.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+<<<<<<< HEAD
+=======
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QCloseEvent \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMessageBox \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmessagebox.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
+>>>>>>> flags
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
@@ -955,6 +1242,13 @@ debug/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+<<<<<<< HEAD
+=======
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QCloseEvent \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMessageBox \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmessagebox.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
+>>>>>>> flags
 		../country.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		ui_mainwindow.h \
@@ -987,18 +1281,20 @@ debug/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyle.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabbar.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMenuBar \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmenubar.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmenu.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QPushButton \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qpushbutton.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
+<<<<<<< HEAD
+=======
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QRadioButton \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qradiobutton.h \
+>>>>>>> flags
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QStatusBar \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstatusbar.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QToolBar \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtoolbar.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QFile \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTextStream \
@@ -1006,8 +1302,16 @@ debug/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		../loader.h \
 		../selectiondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QDialog \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
-		../comparisondialog.h
+		../comparisondialog.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QBitmap \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbitmap.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QPixmap \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QRandomGenerator \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrandom.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\mainwindow.cpp
 
 debug/selectiondialog.o: ../selectiondialog.cpp ../selectiondialog.h \
@@ -1120,7 +1424,18 @@ debug/selectiondialog.o: ../selectiondialog.cpp ../selectiondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QStringListModel \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlistmodel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QBitmap \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbitmap.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QPixmap \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QDebug \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QRandomGenerator \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrandom.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QStandardItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
 		ui_selectiondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
@@ -1133,7 +1448,6 @@ debug/selectiondialog.o: ../selectiondialog.cpp ../selectiondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QCheckBox \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcheckbox.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QComboBox \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcombobox.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -1147,7 +1461,6 @@ debug/selectiondialog.o: ../selectiondialog.cpp ../selectiondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabbar.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QDialogButtonBox \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialogbuttonbox.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGridLayout \
@@ -1155,8 +1468,6 @@ debug/selectiondialog.o: ../selectiondialog.cpp ../selectiondialog.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLineEdit \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlineedit.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextcursor.h \

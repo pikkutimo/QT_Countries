@@ -5,6 +5,9 @@
 #include <QString>
 #include "comparisondialog.h"
 #include <QDebug>
+#include <QRandomGenerator>
+#include <QStandardItem>
+#include <vector>
 
 namespace Ui {
 class selectionDialog;
@@ -26,10 +29,13 @@ private slots:
 
     void on_comboBox_highlighted(int index);
 
+    void on_checkBox_toggled(bool checked);
+
 private:
     Ui::selectionDialog *ui;
     std::vector<QString> originalCountry;
     int selectionIndex;
+    int chosenIndex;
 };
 
 #endif // SELECTIONDIALOG_H

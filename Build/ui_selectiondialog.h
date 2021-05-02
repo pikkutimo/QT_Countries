@@ -36,7 +36,7 @@ public:
     {
         if (selectionDialog->objectName().isEmpty())
             selectionDialog->setObjectName(QString::fromUtf8("selectionDialog"));
-        selectionDialog->resize(412, 134);
+        selectionDialog->resize(408, 178);
         gridLayout = new QGridLayout(selectionDialog);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         buttonBox = new QDialogButtonBox(selectionDialog);
@@ -69,7 +69,7 @@ public:
         checkBox = new QCheckBox(selectionDialog);
         checkBox->setObjectName(QString::fromUtf8("checkBox"));
 
-        gridLayout->addWidget(checkBox, 2, 0, 1, 1);
+        gridLayout->addWidget(checkBox, 3, 0, 1, 1);
 
 
         retranslateUi(selectionDialog);
@@ -84,7 +84,7 @@ public:
         selectionDialog->setWindowTitle(QCoreApplication::translate("selectionDialog", "Dialog", nullptr));
         selectedCountryLabel->setText(QCoreApplication::translate("selectionDialog", "Selected country", nullptr));
         chooseActionLabel->setText(QCoreApplication::translate("selectionDialog", "Compare to", nullptr));
-        checkBox->setText(QCoreApplication::translate("selectionDialog", "Select Random", nullptr));
+        checkBox->setText(QCoreApplication::translate("selectionDialog", "Choose Random", nullptr));
     } // retranslateUi
 
 };

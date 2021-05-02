@@ -14,8 +14,8 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QListView>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
@@ -27,10 +27,13 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QGridLayout *gridLayout_2;
-    QGridLayout *gridLayout;
     QPushButton *pushButton;
+    QGridLayout *gridLayout;
+    QRadioButton *sortAlphabeticallyButton;
+    QRadioButton *sortByAreaButton;
     QListView *listView;
-    QMenuBar *menubar;
+    QListView *countryListView;
+    QRadioButton *sortByPopulationButton;
     QStatusBar *statusbar;
     QToolBar *toolBar;
 
@@ -38,31 +41,52 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(800, 600);
+        MainWindow->resize(781, 537);
+        MainWindow->setToolButtonStyle(Qt::ToolButtonIconOnly);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         gridLayout_2 = new QGridLayout(centralwidget);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        gridLayout = new QGridLayout();
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
-        gridLayout->addWidget(pushButton, 1, 0, 1, 1);
+        gridLayout_2->addWidget(pushButton, 2, 1, 1, 1);
+
+        gridLayout = new QGridLayout();
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        sortAlphabeticallyButton = new QRadioButton(centralwidget);
+        sortAlphabeticallyButton->setObjectName(QString::fromUtf8("sortAlphabeticallyButton"));
+
+        gridLayout->addWidget(sortAlphabeticallyButton, 4, 0, 1, 2);
+
+        sortByAreaButton = new QRadioButton(centralwidget);
+        sortByAreaButton->setObjectName(QString::fromUtf8("sortByAreaButton"));
+
+        gridLayout->addWidget(sortByAreaButton, 3, 0, 1, 2);
 
         listView = new QListView(centralwidget);
         listView->setObjectName(QString::fromUtf8("listView"));
+        QFont font;
+        font.setPointSize(16);
+        listView->setFont(font);
 
-        gridLayout->addWidget(listView, 0, 0, 1, 1);
+        gridLayout->addWidget(listView, 0, 0, 1, 2);
+
+        countryListView = new QListView(centralwidget);
+        countryListView->setObjectName(QString::fromUtf8("countryListView"));
+        countryListView->setFont(font);
+
+        gridLayout->addWidget(countryListView, 0, 2, 1, 1);
 
 
-        gridLayout_2->addLayout(gridLayout, 0, 0, 1, 1);
+        gridLayout_2->addLayout(gridLayout, 0, 1, 1, 1);
+
+        sortByPopulationButton = new QRadioButton(centralwidget);
+        sortByPopulationButton->setObjectName(QString::fromUtf8("sortByPopulationButton"));
+
+        gridLayout_2->addWidget(sortByPopulationButton, 1, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
-        MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
@@ -77,8 +101,11 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Countries of the World", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Compare", nullptr));
+        sortAlphabeticallyButton->setText(QCoreApplication::translate("MainWindow", "Sort by Name", nullptr));
+        sortByAreaButton->setText(QCoreApplication::translate("MainWindow", "Sort by Area", nullptr));
+        sortByPopulationButton->setText(QCoreApplication::translate("MainWindow", "Sort by Population", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar", nullptr));
     } // retranslateUi
 
