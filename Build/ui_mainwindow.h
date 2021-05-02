@@ -111,7 +111,7 @@ public:
         pushButton->setText(QCoreApplication::translate("MainWindow", "Compare", nullptr));
         sortByAreaButton->setText(QCoreApplication::translate("MainWindow", "Sort by Area", nullptr));
         sortAlphabeticallyButton->setText(QCoreApplication::translate("MainWindow", "Sort by Name", nullptr));
-        randomPushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        randomPushButton->setText(QCoreApplication::translate("MainWindow", "Select Random", nullptr));
         sortByPopulationButton->setText(QCoreApplication::translate("MainWindow", "Sort by Population", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar", nullptr));
     } // retranslateUi

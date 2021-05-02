@@ -154,9 +154,11 @@ void MainWindow::closeEvent(QCloseEvent *event)
 {
     event->ignore();
 
+    const QString CONFIRMATION = QObject::tr("Are you sure you want to quit?");
+
     QMessageBox* box = new QMessageBox(QMessageBox::Question,
                        qApp->applicationName(),
-                       "Are you sure you want to quit?",
+                       CONFIRMATION,
                        QMessageBox::Yes | QMessageBox::No,
                        this);
 

@@ -164,102 +164,107 @@
         <translation>Palvelut: </translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="56"/>
+        <location filename="mainwindow.cpp" line="157"/>
+        <source>Are you sure you want to quit?</source>
+        <translation>Haluatko varmasti lopettaa?</translation>
+    </message>
+    <message>
+        <location filename="comparisondialog.cpp" line="52"/>
         <source>Capital</source>
         <translation>Pääkaupunki</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="57"/>
+        <location filename="comparisondialog.cpp" line="53"/>
         <source>Population</source>
         <translation>Asukasluku</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="58"/>
+        <location filename="comparisondialog.cpp" line="54"/>
         <source>Area (square miles)</source>
         <translation>Pinta-ala (neliömailia)</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="59"/>
+        <location filename="comparisondialog.cpp" line="55"/>
         <source>Population density per sq.mile</source>
         <translation>Asukastiheys per nelömaili</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="60"/>
+        <location filename="comparisondialog.cpp" line="56"/>
         <source>Coast/Area ratio</source>
         <translation>Rannikko/Pinta-ala</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="61"/>
+        <location filename="comparisondialog.cpp" line="57"/>
         <source>Net migration</source>
         <translation>Netto maahanmuutto</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="62"/>
+        <location filename="comparisondialog.cpp" line="58"/>
         <source>Infant mortality (per 1000 births)</source>
         <translation>Lapsikuolleisuus per 1000 syntymää</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="63"/>
+        <location filename="comparisondialog.cpp" line="59"/>
         <source>GDP ($ per capita)</source>
         <translation>BKT ($ per asukas)</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="64"/>
+        <location filename="comparisondialog.cpp" line="60"/>
         <source>Literacy(%)</source>
         <translation>Lukutaito (%)</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="65"/>
+        <location filename="comparisondialog.cpp" line="61"/>
         <source>Phones (per 1000)</source>
         <translation>Matkapuhelimia per 1000</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="66"/>
+        <location filename="comparisondialog.cpp" line="62"/>
         <source>Arable land(%)</source>
         <translation>Viljelykelpoinen maa (%)</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="67"/>
+        <location filename="comparisondialog.cpp" line="63"/>
         <source>Crops land(%)</source>
         <translation>Viljely ala (%)</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="68"/>
+        <location filename="comparisondialog.cpp" line="64"/>
         <source>Other (%)</source>
         <translation>Muu (%)</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="69"/>
+        <location filename="comparisondialog.cpp" line="65"/>
         <source>Climate</source>
         <translation>Ilmasto</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="70"/>
+        <location filename="comparisondialog.cpp" line="66"/>
         <source>Birthrate</source>
         <translation>Syntyvyys</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="71"/>
+        <location filename="comparisondialog.cpp" line="67"/>
         <source>Deathrate</source>
         <translation>Kuolleisuus</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="72"/>
+        <location filename="comparisondialog.cpp" line="68"/>
         <source>Agriculture</source>
         <translation>Maatalous</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="73"/>
+        <location filename="comparisondialog.cpp" line="69"/>
         <source>Industry</source>
         <translation>Teollisuus</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="74"/>
+        <location filename="comparisondialog.cpp" line="70"/>
         <source>Service</source>
         <translation>Palvelut</translation>
     </message>
     <message>
-        <location filename="comparisondialog.cpp" line="75"/>
+        <location filename="comparisondialog.cpp" line="71"/>
         <source>Alpha-2 country code</source>
         <translation>Alpha-2 maakoodi</translation>
     </message>

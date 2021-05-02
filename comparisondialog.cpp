@@ -9,6 +9,7 @@ ComparisonDialog::ComparisonDialog(std::vector<QString> originalCountry, std::ve
     // GUI
     ui->setupUi(this);
     this->setWindowTitle("Comparison");
+
     titlesList = new QStringList();
     originalList = new QStringList();
     comparisonList = new QStringList();
@@ -16,37 +17,16 @@ ComparisonDialog::ComparisonDialog(std::vector<QString> originalCountry, std::ve
     originalModel = new QStringListModel(*originalList, NULL);
     comparisonModel = new QStringListModel(*comparisonList, NULL);
 
-    fillTitles();
-
     ui->originalLabel->setText(originalCountry.at(0));
     ui->comparisonLabel->setText(countryToCompare.at(0));
 
-    /* Read data to listView of the selected country
-    for (QString &item: originalCountry) {
-        if (item!=originalCountry.at(0))
-            originalList->append(item);
-    }
-
-    ui->comparisonLabel->setText(countryToCompare.at(0));
-
-    // Read data to listView of the comparison country
-    for (QString &compareItem : countryToCompare) {
-        if (compareItem!=countryToCompare.at(0))
-            comparisonList->append(compareItem);
-    }*/
-
+    fillTitles();
     fillCountry(originalCountry, originalList);
     fillCountry(countryToCompare, comparisonList);
 
     ui->itemsListView->setStyleSheet("background-color: transparent; border: none;");
 
-    titlesModel->setStringList(*titlesList);
-    originalModel->setStringList(*originalList);
-    comparisonModel->setStringList(*comparisonList);
-
-    ui->itemsListView->setModel(titlesModel);
-    ui->originalListView->setModel(originalModel);
-    ui->comparisonListView->setModel(comparisonModel);
+    setModels();
 
     loadFlags();
 }
@@ -112,6 +92,17 @@ void ComparisonDialog::fillTitles()
     titlesList->append(SERVICE);
     titlesList->append(CCODE);
 
+}
+
+void ComparisonDialog::setModels()
+{
+    titlesModel->setStringList(*titlesList);
+    originalModel->setStringList(*originalList);
+    comparisonModel->setStringList(*comparisonList);
+
+    ui->itemsListView->setModel(titlesModel);
+    ui->originalListView->setModel(originalModel);
+    ui->comparisonListView->setModel(comparisonModel);
 }
 
 void ComparisonDialog::loadFlags()

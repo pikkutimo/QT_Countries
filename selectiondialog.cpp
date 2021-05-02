@@ -87,7 +87,7 @@ void selectionDialog::updateComboBox()
 
     for (std::vector<QString> country : allCountries) {
         if (country.at(0) != selectedCountry) {
-            if (country.at(2).toInt() < populationLimit) {
+            if (country.at(2).toInt() <= populationLimit) {
                 ui->comboBox->addItem(country.at(0));
                 comboBoxIndex++;
             }

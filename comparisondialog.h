@@ -26,6 +26,7 @@ public:
     QStringListModel* titlesModel;
     void fillCountry(std::vector<QString> &, QStringList*);
     void fillTitles();
+    void setModels();
     void loadFlags();
 
 private slots:
