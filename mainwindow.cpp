@@ -6,6 +6,7 @@
 #include "loader.h"
 #include "selectiondialog.h"
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -87,6 +88,26 @@ void MainWindow::updateList()
 // Function to display the selected countrys data in CountryListView
 void MainWindow::updateCountryAttributes()
 {
+    const QString COUNTRY = QObject::tr("Country: ");
+    const QString CAPITAL = QObject::tr("Capital: ");
+    const QString POPULATION = QObject::tr("Population: ");
+    const QString AREA = QObject::tr("Area (square miles): ");
+    const QString POP_DENSITY = QObject::tr("Population density per sq.mile: ");
+    const QString CARATIO = QObject::tr("Coast/Area ratio: ");
+    const QString MIGRATION = QObject::tr("Net migration: ");
+    const QString INF_MORTALITY = QObject::tr("Infant mortality (per 1000 births): ");
+    const QString GDP = QObject::tr("GDP ($ per capita): ");
+    const QString LITERACY = QObject::tr("Literacy: ");
+    const QString PHONES = QObject::tr("Phones (per 1000): ");
+    const QString ARABLE = QObject::tr("Arable land: ");
+    const QString CROPS = QObject::tr("Crops land: ");
+    const QString OTHER = QObject::tr("Other: ");
+    const QString BIRTHRATE = QObject::tr("Birthrate: ");
+    const QString DEATHRATE = QObject::tr("Deathrate: ");
+    const QString AGRICULTURE = QObject::tr("Agriculture: ");
+    const QString INDUSTRY = QObject::tr("Industry: ");
+    const QString SERVICE = QObject::tr("Service: ");
+
     attributesList = new QStringList();
     countryModel = new QStringListModel(*attributesList, NULL);
 
@@ -97,26 +118,25 @@ void MainWindow::updateCountryAttributes()
     for (std::vector<QString> country : listOfCountries) {
         // Seek selected country and transfer its data into list
         if (country.at(0) == countryToLook) {
-            attributesList->append("Country: " + country.at(0));
-            attributesList->append("Capital: " + country.at(1));
-            attributesList->append("Population: " + country.at(2));
-            attributesList->append("Area (square miles): " + country.at(3));
-            attributesList->append("Population density per sq.mile: " + country.at(4));
-            attributesList->append("Coast/Area ratio: " + country.at(5));
-            attributesList->append("Net migration: " + country.at(6));
-            attributesList->append("Infant mortality (per 1000 births): " + country.at(7));
-            attributesList->append("GDP ($ per capita): " + country.at(8));
-            attributesList->append("Literacy: " + country.at(9) + "%");
-            attributesList->append("Phones (per 1000): " + country.at(10));
-            attributesList->append("Arable land: " + country.at(11) + "%");
-            attributesList->append("Crops land: " + country.at(12) + "%");
-            attributesList->append("Other: " + country.at(13) + "%");
-            //attributesList->append("Climate: " + country.at(14));
-            attributesList->append("Birthrate: " + country.at(15));
-            attributesList->append("Deathrate: " + country.at(16));
-            attributesList->append("Agriculture: " + country.at(17));
-            attributesList->append("Industry: " + country.at(18));
-            attributesList->append("Service: " + country.at(19));
+            attributesList->append(COUNTRY + country.at(0));
+            attributesList->append(CAPITAL + country.at(1));
+            attributesList->append(POPULATION + country.at(2));
+            attributesList->append(AREA + country.at(3));
+            attributesList->append(POP_DENSITY + country.at(4));
+            attributesList->append(CARATIO + country.at(5));
+            attributesList->append(MIGRATION + country.at(6));
+            attributesList->append(INF_MORTALITY + country.at(7));
+            attributesList->append(GDP + country.at(8));
+            attributesList->append(LITERACY + country.at(9) + "%");
+            attributesList->append(PHONES + country.at(10));
+            attributesList->append(ARABLE + country.at(11) + "%");
+            attributesList->append(CROPS + country.at(12) + "%");
+            attributesList->append(OTHER + country.at(13) + "%");
+            attributesList->append(BIRTHRATE + country.at(15));
+            attributesList->append(DEATHRATE + country.at(16));
+            attributesList->append(AGRICULTURE + country.at(17));
+            attributesList->append(INDUSTRY + country.at(18));
+            attributesList->append(SERVICE + country.at(19));
             break;
         }
     }

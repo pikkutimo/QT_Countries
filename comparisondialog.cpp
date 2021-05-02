@@ -53,27 +53,48 @@ ComparisonDialog::~ComparisonDialog()
 
 void ComparisonDialog::fillTitles()
 {
-    // Since the csv doesn't contain these, let's add them here
-    titlesList->append("Capital");
-    titlesList->append("Population");
-    titlesList->append("Area (square miles)");
-    titlesList->append("Population density per sq.mile");
-    titlesList->append("Coast/Area ratio");
-    titlesList->append("Net migration");
-    titlesList->append("Infant mortality (per 1000 births)");
-    titlesList->append("GDP ($ per capita)");
-    titlesList->append("Literacy (%)");
-    titlesList->append("Phones (per 1000)");
-    titlesList->append("Arable land(%)");
-    titlesList->append("Crops land(%)");
-    titlesList->append("Other (%)");
-    titlesList->append("Climate");
-    titlesList->append("Birthrate");
-    titlesList->append("Deathrate");
-    titlesList->append("Agriculture");
-    titlesList->append("Industry");
-    titlesList->append("Service");
-    titlesList->append("Alpha-2 country code");
+    const QString CAPITAL = QObject::tr("Capital");
+    const QString POPULATION = QObject::tr("Population");
+    const QString AREA = QObject::tr("Area (square miles)");
+    const QString POP_DENSITY = QObject::tr("Population density per sq.mile");
+    const QString CARATIO = QObject::tr("Coast/Area ratio");
+    const QString MIGRATION = QObject::tr("Net migration");
+    const QString INF_MORTALITY = QObject::tr("Infant mortality (per 1000 births)");
+    const QString GDP = QObject::tr("GDP ($ per capita)");
+    const QString LITERACY = QObject::tr("Literacy(%)");
+    const QString PHONES = QObject::tr("Phones (per 1000)");
+    const QString ARABLE = QObject::tr("Arable land(%)");
+    const QString CROPS = QObject::tr("Crops land(%)");
+    const QString OTHER = QObject::tr("Other (%)");
+    const QString CLIMATE = QObject::tr("Climate");
+    const QString BIRTHRATE = QObject::tr("Birthrate");
+    const QString DEATHRATE = QObject::tr("Deathrate");
+    const QString AGRICULTURE = QObject::tr("Agriculture");
+    const QString INDUSTRY = QObject::tr("Industry");
+    const QString SERVICE = QObject::tr("Service");
+    const QString CCODE = QObject::tr("Alpha-2 country code");
+
+    // Row titles
+    titlesList->append(CAPITAL);
+    titlesList->append(POPULATION);
+    titlesList->append(AREA);
+    titlesList->append(POP_DENSITY);
+    titlesList->append(CARATIO);
+    titlesList->append(MIGRATION);
+    titlesList->append(INF_MORTALITY);
+    titlesList->append(GDP);
+    titlesList->append(LITERACY);
+    titlesList->append(PHONES);
+    titlesList->append(ARABLE);
+    titlesList->append(CROPS);
+    titlesList->append(OTHER);
+    titlesList->append(CLIMATE);
+    titlesList->append(BIRTHRATE);
+    titlesList->append(DEATHRATE);
+    titlesList->append(AGRICULTURE);
+    titlesList->append(INDUSTRY);
+    titlesList->append(SERVICE);
+    titlesList->append(CCODE);
 
 }
 
