@@ -18,6 +18,7 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QSlider>
 
 QT_BEGIN_NAMESPACE
 
@@ -25,12 +26,15 @@ class Ui_selectionDialog
 {
 public:
     QGridLayout *gridLayout;
-    QDialogButtonBox *buttonBox;
-    QLineEdit *selectedCountryLineEdit;
-    QLabel *selectedCountryLabel;
-    QLabel *chooseActionLabel;
-    QComboBox *comboBox;
     QCheckBox *checkBox;
+    QSlider *limitSlider;
+    QLabel *chooseActionLabel;
+    QLabel *selectedCountryLabel;
+    QLabel *label;
+    QLabel *label_2;
+    QLineEdit *selectedCountryLineEdit;
+    QComboBox *comboBox;
+    QDialogButtonBox *buttonBox;
 
     void setupUi(QDialog *selectionDialog)
     {
@@ -39,37 +43,54 @@ public:
         selectionDialog->resize(408, 178);
         gridLayout = new QGridLayout(selectionDialog);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        buttonBox = new QDialogButtonBox(selectionDialog);
-        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
-        buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
+        checkBox = new QCheckBox(selectionDialog);
+        checkBox->setObjectName(QString::fromUtf8("checkBox"));
 
-        gridLayout->addWidget(buttonBox, 4, 0, 1, 2);
+        gridLayout->addWidget(checkBox, 4, 0, 1, 1);
 
-        selectedCountryLineEdit = new QLineEdit(selectionDialog);
-        selectedCountryLineEdit->setObjectName(QString::fromUtf8("selectedCountryLineEdit"));
+        limitSlider = new QSlider(selectionDialog);
+        limitSlider->setObjectName(QString::fromUtf8("limitSlider"));
+        limitSlider->setOrientation(Qt::Horizontal);
 
-        gridLayout->addWidget(selectedCountryLineEdit, 0, 1, 1, 1);
+        gridLayout->addWidget(limitSlider, 1, 1, 1, 1);
+
+        chooseActionLabel = new QLabel(selectionDialog);
+        chooseActionLabel->setObjectName(QString::fromUtf8("chooseActionLabel"));
+
+        gridLayout->addWidget(chooseActionLabel, 2, 0, 1, 1);
 
         selectedCountryLabel = new QLabel(selectionDialog);
         selectedCountryLabel->setObjectName(QString::fromUtf8("selectedCountryLabel"));
 
         gridLayout->addWidget(selectedCountryLabel, 0, 0, 1, 1);
 
-        chooseActionLabel = new QLabel(selectionDialog);
-        chooseActionLabel->setObjectName(QString::fromUtf8("chooseActionLabel"));
+        label = new QLabel(selectionDialog);
+        label->setObjectName(QString::fromUtf8("label"));
 
-        gridLayout->addWidget(chooseActionLabel, 1, 0, 1, 1);
+        gridLayout->addWidget(label, 1, 0, 1, 1);
+
+        label_2 = new QLabel(selectionDialog);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setMinimumSize(QSize(50, 0));
+
+        gridLayout->addWidget(label_2, 1, 2, 1, 1);
+
+        selectedCountryLineEdit = new QLineEdit(selectionDialog);
+        selectedCountryLineEdit->setObjectName(QString::fromUtf8("selectedCountryLineEdit"));
+
+        gridLayout->addWidget(selectedCountryLineEdit, 0, 1, 1, 2);
 
         comboBox = new QComboBox(selectionDialog);
         comboBox->setObjectName(QString::fromUtf8("comboBox"));
 
-        gridLayout->addWidget(comboBox, 1, 1, 1, 1);
+        gridLayout->addWidget(comboBox, 2, 1, 1, 2);
 
-        checkBox = new QCheckBox(selectionDialog);
-        checkBox->setObjectName(QString::fromUtf8("checkBox"));
+        buttonBox = new QDialogButtonBox(selectionDialog);
+        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
+        buttonBox->setOrientation(Qt::Horizontal);
+        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
-        gridLayout->addWidget(checkBox, 3, 0, 1, 1);
+        gridLayout->addWidget(buttonBox, 5, 0, 1, 3);
 
 
         retranslateUi(selectionDialog);
@@ -82,9 +103,11 @@ public:
     void retranslateUi(QDialog *selectionDialog)
     {
         selectionDialog->setWindowTitle(QCoreApplication::translate("selectionDialog", "Dialog", nullptr));
-        selectedCountryLabel->setText(QCoreApplication::translate("selectionDialog", "Selected country", nullptr));
-        chooseActionLabel->setText(QCoreApplication::translate("selectionDialog", "Compare to", nullptr));
         checkBox->setText(QCoreApplication::translate("selectionDialog", "Choose Random", nullptr));
+        chooseActionLabel->setText(QCoreApplication::translate("selectionDialog", "Compare to", nullptr));
+        selectedCountryLabel->setText(QCoreApplication::translate("selectionDialog", "Selected country", nullptr));
+        label->setText(QCoreApplication::translate("selectionDialog", "Max population", nullptr));
+        label_2->setText(QString());
     } // retranslateUi
 
 };

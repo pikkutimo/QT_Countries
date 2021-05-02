@@ -3,8 +3,12 @@
 
 selectionDialog::selectionDialog(QString selectedCountry, std::vector<std::vector<QString>> &listOfCountries, QWidget *parent) :
     QDialog(parent),
+    ui(new Ui::selectionDialog),
     allCountries(listOfCountries),
-    ui(new Ui::selectionDialog)
+    selectedCountry(selectedCountry),
+    maxPopulation(0),
+    minPopulation(1000000),
+    populationLimit(0)
 {
     // GUI
     ui->setupUi(this);
@@ -12,6 +16,7 @@ selectionDialog::selectionDialog(QString selectedCountry, std::vector<std::vecto
     ui->selectedCountryLineEdit->setText(selectedCountry);
 
     // Transfer data to ComboBox
+    int countryPopulation = 0;
     int index = 0;
     for (std::vector<QString> country : allCountries) {
         if (country.at(0) != selectedCountry) {
@@ -22,8 +27,22 @@ selectionDialog::selectionDialog(QString selectedCountry, std::vector<std::vecto
             ui->comboBox->addItem(country.at(0));
             chosenIndex = index;
         }
+        countryPopulation = country.at(2).toInt();
+
+        if (countryPopulation < minPopulation) {
+            minPopulation = countryPopulation;
+        }
+
+        if (countryPopulation > maxPopulation) {
+            maxPopulation = countryPopulation;
+        }
 
     }
+
+    ui->limitSlider->setMinimum(minPopulation);
+    ui->limitSlider->setMaximum(maxPopulation);
+    ui->limitSlider->setValue(maxPopulation);
+    ui->label_2->setText(QString::number(maxPopulation));
 
     // Make the previously selected country unselectable
     qobject_cast<QStandardItemModel*>(ui->comboBox->model())->item(chosenIndex)->setEnabled(false);
@@ -60,5 +79,31 @@ void selectionDialog::on_checkBox_toggled(bool checked)
 
     if (!ui->comboBox->isEnabled()) {
         selectionIndex = QRandomGenerator::global()->bounded(0,allCountries.size());
+    }
+}
+
+void selectionDialog::on_limitSlider_valueChanged(int value)
+{
+    populationLimit = value;
+    ui->label_2->setText(QString::number(populationLimit));
+    updateComboBox();
+}
+
+void selectionDialog::updateComboBox()
+{
+    int comboBoxIndex = 0;
+    ui->comboBox->clear();
+
+    for (std::vector<QString> country : allCountries) {
+        if (country.at(0) != selectedCountry) {
+            if (country.at(2).toInt() < populationLimit) {
+                ui->comboBox->addItem(country.at(0));
+                comboBoxIndex++;
+            }
+        } else {
+            originalCountry = country;
+            ui->comboBox->addItem(country.at(0));
+            chosenIndex = comboBoxIndex;
+        }
     }
 }

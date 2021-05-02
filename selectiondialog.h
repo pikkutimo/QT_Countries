@@ -31,11 +31,18 @@ private slots:
 
     void on_checkBox_toggled(bool checked);
 
+    void on_limitSlider_valueChanged(int value);
+
 private:
     Ui::selectionDialog *ui;
     std::vector<QString> originalCountry;
+    QString selectedCountry;
     int selectionIndex;
     int chosenIndex;
+    int maxPopulation;
+    int minPopulation;
+    int populationLimit;
+    void updateComboBox();
 };
 
 #endif // SELECTIONDIALOG_H
